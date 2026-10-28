@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electra Bell | Game Design Portfolio</title>
+
+    <!-- Bootstrap supports the responsive layout and mobile navigation. -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- My personal portfolio styling. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top portfolio-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                Electra Bell<span class="brand-dot">.</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#portfolioNavbar"
+                aria-controls="portfolioNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="portfolioNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#minigame">Mini-Game</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HOME SECTION -->
+    <header class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <p class="eyebrow">GAME DESIGNER IN DEVELOPMENT</p>
+
+                    <h1>
+                        Game Designer Student
+                        <span class="gradient-text">ELECTRA BELL</span>
+                    </h1>
+
+                    <p class="hero-description">
+                       Hiii, I’m Electra Bell! 🎮💜
+
+A Game Design student with a big imagination, a little chaos, and way too many ideas! I love creating games, getting creative, and turning “what if?” into “PLAY IT!”
+
+Currently learning, creating, and probably overthinking my next project.
+
+Welcome to my world! Let’s play.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-accent">
+                            Explore my work
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-light">
+                            Contact me
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <strong>01</strong>
+                            <span>Creative thinking</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Learning by doing</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Building experiences</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork created with CSS. -->
+                <div class="col-lg-5">
+                    <div
+                        class="hero-art"
+                        role="img"
+                        aria-label="Abstract purple game-inspired artwork"
+                    >
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+
+                        <div class="hero-core">
+                            <span>EB</span>
+                        </div>
+
+                        <span class="floating-symbol symbol-one">✦</span>
+                        <span class="floating-symbol symbol-two">+</span>
+                        <span class="floating-symbol symbol-three">◇</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section-padding" id="about">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+
+                <h2>
+                    Creative ideas,
+                    <span class="gradient-text">curious mind.</span>
+                </h2>
+
+                <p>
+                    I'm developing my skills in game design and different Scripting languages,
+                    one project at a time.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <span class="card-number">01</span>
+                        <h3>Game Design</h3>
+
+                        <p>
+                            Exploring game ideas, player goals, mechanics and
+                            experiences that make games engaging.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <span class="card-number">02</span>
+                        <h3>Development</h3>
+
+                        <p>
+                            Learning how code, interactive systems and visual
+                            elements work together inside a game.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <span class="card-number">03</span>
+                        <h3>Always Learning</h3>
+
+                        <p>
+                            Testing ideas, solving problems and improving my work
+                            through practice and feedback.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="skills-area">
+                <h3>Skills I'm developing</h3>
+
+                <div class="skill-list">
+                    <span>Game Design</span>
+                    <span>Unity</span>
+                    <span>C# Scripting</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION: Four projects using all seven screenshots. -->
+    <section class="section-padding section-muted" id="projects">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED WORK</p>
+
+                <h2>
+                    Projects &
+                    <span class="gradient-text">experiments.</span>
+                </h2>
+
+                <p>
+                    A growing collection of game concepts, levels,
+                    gameplay systems and development experiments.
+                    Game Design is a dramatic field of learning new things, 
+                    hating it and suddenly loving it when finally understanding it.
+                </p>
+            </div>
+
+            <!-- Project filter buttons controlled by script.js. -->
+            <div class="project-filters" aria-label="Filter projects">
+                <button
+                    class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All Projects
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="game"
+                >
+                    Games
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="experiment"
+                >
+                    Experiments
+                </button>
+            </div>
+
+
+            <div class="row g-4" id="projectGrid">
+
+                <!-- PROJECT 1: CPA 3 -->
+                <div class="col-md-6 col-lg-6 project-item" data-category="game">
+                    <article class="project-card h-100">
+
+                        <div class="project-image-wrapper">
+                            <img
+                                src="assets/CPA 3 Win Condition.png"
+                                class="project-image"
+                                alt="CPA 3 game showing its win condition screen"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="project-content">
+                            <p class="project-category">CPA 3 · GAME DEVELOPMENT</p>
+
+                            <h3>Win Condition Game</h3>
+
+                            <p>
+                                A game development project demonstrating a
+                                successful win condition and the player's
+                                progression towards completing the objective.
+                            </p>
+
+                            <button
+                                class="text-link project-details-btn"
+                                type="button"
+                                data-title="CPA 3 — Win Condition"
+                                data-description="This project screenshot demonstrates the game's win condition. It represents work completed for CPA 3. Add more detail about the mechanics, tools and development process if required."
+                            >
+                                View project details →
+                            </button>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- PROJECT 2: MEP 1 -->
+                <div class="col-md-6 col-lg-6 project-item" data-category="game">
+                    <article class="project-card h-100">
+
+                        <div class="project-image-wrapper project-image-pair">
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 1 Level 1.png"
+                                    class="project-image"
+                                    alt="MEP 1 game Level 1 screenshot"
+                                    loading="lazy"
+                                >
+                                <figcaption>Level 1</figcaption>
+                            </figure>
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 1 LEVEL 2.png"
+                                    class="project-image"
+                                    alt="MEP 1 game Level 2 screenshot"
+                                    loading="lazy"
+                                >
+                                <figcaption>Level 2</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <div class="project-content">
+                            <p class="project-category">MEP 1 · LEVEL DESIGN</p>
+
+                            <h3>Level Design Project</h3>
+
+                            <p>
+                                A two-level game project showcasing level
+                                layouts, object placement and the visual
+                                structure of a playable environment. Also the project
+                                where I discovered how to add more levels into one game.
+                            </p>
+
+                            <button
+                                class="text-link project-details-btn"
+                                type="button"
+                                data-title="MEP 1 — Level Design"
+                                data-description="This project includes screenshots of Level 1 and Level 2. Together, they showcase the level layouts and environment design created for MEP 1."
+                            >
+                                View project details →
+                            </button>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- PROJECT 3: MEP 2 -->
+                <div class="col-md-6 col-lg-6 project-item" data-category="game">
+                    <article class="project-card h-100">
+
+                        <div class="project-image-wrapper project-image-pair">
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 2 Web Game.png"
+                                    class="project-image"
+                                    alt="MEP 2 web game screenshot"
+                                    loading="lazy"
+                                >
+                                <figcaption>Web game</figcaption>
+                            </figure>
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 2 Game Over.png"
+                                    class="project-image"
+                                    alt="MEP 2 game over screen"
+                                    loading="lazy"
+                                >
+                                <figcaption>Game over</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <div class="project-content">
+                            <p class="project-category">MEP 2 · GAME SYSTEMS</p>
+
+                            <h3>Web Game & Game States</h3>
+
+                            <p>
+                                A game project featuring a web game view and
+                                a game-over screen, demonstrating different
+                                games, and a game over panel with an implemented functioning
+                                button.
+                            </p>
+
+                            <button
+                                class="text-link project-details-btn"
+                                type="button"
+                                data-title="MEP 2 — Web Game"
+                                data-description="This project showcases the web game and its game-over screen. These screenshots document the game's presentation and an end-of-game state."
+                            >
+                                View project details →
+                            </button>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- PROJECT 4: MEP 3 -->
+                <div class="col-md-6 col-lg-6 project-item" data-category="experiment">
+                    <article class="project-card h-100">
+
+                        <div class="project-image-wrapper project-image-pair">
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 3 Start Menu.png"
+                                    class="project-image"
+                                    alt="MEP 3 Hangry game start menu"
+                                    loading="lazy"
+                                >
+                                <figcaption>Start menu</figcaption>
+                            </figure>
+
+                            <figure class="project-figure">
+                                <img
+                                    src="assets/MEP 3 Scene.png"
+                                    class="project-image"
+                                    alt="MEP 3 Hangry game scene"
+                                    loading="lazy"
+                                >
+                                <figcaption>Game scene</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <div class="project-content">
+                            <p class="project-category">MEP 3 · GAME DESIGN</p>
+
+                            <h3>Hangry: The Snack Run</h3>
+
+                            <p>
+                                A game project featuring a start menu and
+                                gameplay scene, presenting the game's visual
+                                identity and in-game environment. A project where 
+                                I had gained the knowledge of connecting the UI (USER-INTERFACE)
+                                to the level that follows.
+                            </p>
+
+                            <button
+                                class="text-link project-details-btn"
+                                type="button"
+                                data-title="MEP 3 — Hangry: The Snack Run"
+                                data-description="This project showcases the Hangry: The Snack Run start menu and gameplay scene. The screenshots present the game's interface and environment."
+                            >
+                                View project details →
+                            </button>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FRUIT FRENZY MINI-GAME -->
+    <section class="section-padding" id="minigame">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">PLAY SOMETHING</p>
+
+                <h2>
+                    Fruit
+                    <span class="gradient-text">Frenzy.</span>
+                </h2>
+
+                <p>
+                    Collect the correct fruits, avoid the bombs, and beat the
+                    60-second timer! The challenge gets harder as you play.
+                </p>
+            </div>
+
+            <div class="mini-game-card">
+
+                <!-- Scoreboard. -->
+                <div class="game-topbar">
+                    <div>
+                        <span class="game-stat-label">SCORE</span>
+                        <strong id="gameScore">0</strong>
+                    </div>
+
+                    <div>
+                        <span class="game-stat-label">TIME LEFT</span>
+                        <strong id="gameTimer">60s</strong>
+                    </div>
+
+                    <div>
+                        <span class="game-stat-label">TARGET FRUIT</span>
+                        <strong id="gameTarget">🍎 Apple</strong>
+                    </div>
+
+                    <div>
+                        <span class="game-stat-label">DIFFICULTY</span>
+                        <strong id="gameDifficulty">Level 1</strong>
+                    </div>
+                </div>
+
+                <!-- The game objects are created by script.js. -->
+                <div
+                    class="game-arena"
+                    id="gameArena"
+                    tabindex="0"
+                    role="application"
+                    aria-label="Fruit Frenzy game. Use arrow keys, WASD or touch controls to move and collect fruits while avoiding bombs."
+                >
+                    <div class="game-grid-pattern" aria-hidden="true"></div>
+
+                    <div class="game-player" id="gamePlayer" aria-label="Player">
+                        🧺
+                    </div>
+
+                    <div class="game-overlay" id="gameOverlay">
+                        <div class="game-overlay-content">
+                            <p class="eyebrow">A FRUITY MINI CHALLENGE</p>
+
+                            <h3 id="gameOverlayTitle">
+                                Ready for Fruit Frenzy?
+                            </h3>
+
+                            <p id="gameOverlayText">
+                                Collect the target fruit, avoid the bombs,
+                                and earn as many points as you can in 60 seconds!
+                            </p>
+
+                            <button
+                                class="btn btn-accent"
+                                id="startGameBtn"
+                                type="button"
+                            >
+                                Start Fruit Frenzy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile movement controls. -->
+                <div
+                    class="game-controls"
+                    aria-label="Fruit Frenzy movement controls"
+                >
+                    <button
+                        type="button"
+                        class="game-control-btn"
+                        id="moveLeftBtn"
+                        aria-label="Move left"
+                    >←</button>
+
+                    <button
+                        type="button"
+                        class="game-control-btn"
+                        id="moveUpBtn"
+                        aria-label="Move up"
+                    >↑</button>
+
+                    <button
+                        type="button"
+                        class="game-control-btn"
+                        id="moveDownBtn"
+                        aria-label="Move down"
+                    >↓</button>
+
+                    <button
+                        type="button"
+                        class="game-control-btn"
+                        id="moveRightBtn"
+                        aria-label="Move right"
+                    >→</button>
+                </div>
+
+                <div class="game-instructions">
+                    <p><strong>How to play</strong></p>
+
+                    <p>
+                        Desktop: use <kbd>W</kbd> <kbd>A</kbd>
+                        <kbd>S</kbd> <kbd>D</kbd> or the arrow keys to move.
+                    </p>
+
+                    <p>
+                        Mobile: use the arrow buttons. Collect the target fruit
+                        and avoid the bombs!
+                    </p>
+
+                    <p class="game-small-note">
+                        You have 60 seconds. Difficulty increases as you score
+                        more points. Collect the correct fruit to earn points.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding section-muted" id="contact">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+
+                <div class="col-lg-5">
+                    <p class="eyebrow">LET'S CONNECT</p>
+
+                    <h2>
+                        Have an idea?<br>
+                        <span class="gradient-text">Let's talk.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        I'm interested in learning, collaborating and connecting
+                        with people who enjoy creative and interactive projects.
+                    </p>
+                </div>
+
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">
+                                Your name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">
+                                Email address
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">
+                                Message
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent">
+                            Send message
+                        </button>
+
+                        <p
+                            id="formFeedback"
+                            class="form-feedback"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="portfolio-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <p>
+                © <span id="currentYear"></span>
+                Electra Bell. Built while learning.
+            </p>
+
+            <p>Designed with curiosity and a little bit of code.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap supports the responsive mobile navigation. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Portfolio filters, project details, contact form and Fruit Frenzy. -->
+    <script src="script.js"></script>
+
+</body>
+</html>
