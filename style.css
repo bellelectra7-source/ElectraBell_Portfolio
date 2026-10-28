@@ -10,19 +10,19 @@
    ========================================================= */
 
 :root {
-    --page-bg: #0c0e14;
-    --surface: #141822;
-    --surface-light: #1b2030;
+    --page-bg: #0c0a14;
+    --surface: #151120;
+    --surface-light: #211a30;
 
-    --text-main: #f5f5fb;
-    --text-muted: #a7adbd;
+    --text-main: #f5f1ff;
+    --text-muted: #b5acc9;
 
-    --accent-purple: #a78bfa;
-    --accent-blue: #a78bfa;
-    --accent-pink: #f9a8d4;
+    --accent-purple: #b18aff;
+    --accent-blue: #b18aff;
+    --accent-pink: #f5a6d6;
 
-    --border-colour: rgba(255, 255, 255, 0.1);
-    --purple-glow: rgba(167, 139, 250, 0.2);
+    --border-colour: rgba(220, 190, 255, 0.14);
+    --purple-glow: rgba(177, 138, 255, 0.22);
 }
 
 * {
@@ -57,6 +57,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 
@@ -65,7 +66,7 @@ img {
    ========================================================= */
 
 .portfolio-nav {
-    background: rgba(12, 14, 20, 0.94);
+    background: rgba(12, 10, 20, 0.96);
     border-bottom: 1px solid var(--border-colour);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -81,7 +82,7 @@ img {
 }
 
 .brand-dot {
-    color: var(--accent-purple);
+    color: var(--accent-pink);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -92,7 +93,7 @@ img {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-    color: var(--accent-purple);
+    color: var(--accent-pink);
 }
 
 .navbar-toggler {
@@ -112,11 +113,12 @@ img {
     background: linear-gradient(
         120deg,
         #8b5cf6,
-        var(--accent-purple)
+        #c084fc,
+        #e9a5dc
     );
 
-    color: #ffffff;
-    border: 1px solid rgba(196, 181, 253, 0.25);
+    color: #171020;
+    border: 1px solid rgba(245, 220, 255, 0.25);
     border-radius: 10px;
     padding: 12px 20px;
     font-weight: 700;
@@ -128,13 +130,13 @@ img {
 }
 
 .btn-accent:hover {
-    color: #ffffff;
+    color: #171020;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.3);
+    box-shadow: 0 8px 25px rgba(177, 138, 255, 0.3);
 }
 
 .btn-accent:focus-visible {
-    outline: 2px solid var(--accent-purple);
+    outline: 2px solid var(--accent-pink);
     outline-offset: 3px;
 }
 
@@ -144,12 +146,12 @@ img {
 }
 
 .btn-outline-light:hover {
-    color: #11111a;
+    color: #171020;
     background: #ffffff;
 }
 
 .eyebrow {
-    color: var(--accent-purple);
+    color: var(--accent-pink);
     font-size: 0.76rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -159,8 +161,9 @@ img {
 .gradient-text {
     background: linear-gradient(
         100deg,
-        #8b5cf6,
-        var(--accent-purple)
+        #b18aff,
+        #d6a6ff,
+        #f5a6d6
     );
 
     -webkit-background-clip: text;
@@ -179,6 +182,14 @@ img {
     display: flex;
     align-items: center;
     overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 15% 20%,
+            rgba(112, 62, 170, 0.12),
+            transparent 45%
+        ),
+        var(--page-bg);
 }
 
 .hero-section h1 {
@@ -194,6 +205,7 @@ img {
     max-width: 600px;
     margin-bottom: 28px;
     font-size: 1.08rem;
+    white-space: pre-line;
 }
 
 .hero-stats {
@@ -237,17 +249,17 @@ img {
     background:
         radial-gradient(
             circle at 50% 50%,
-            rgba(167, 139, 250, 0.16),
+            rgba(177, 138, 255, 0.2),
             transparent 55%
         ),
-        linear-gradient(140deg, #191d2b, #0e1119);
+        linear-gradient(140deg, #21172f, #0e0a16);
 }
 
 .orbit {
     position: absolute;
     width: 68%;
     height: 68%;
-    border: 1px solid rgba(167, 139, 250, 0.45);
+    border: 1px solid rgba(177, 138, 255, 0.5);
     border-radius: 50%;
 }
 
@@ -257,7 +269,7 @@ img {
 
 .orbit-two {
     transform: rotate(-35deg) scaleX(0.7);
-    border-color: rgba(167, 139, 250, 0.45);
+    border-color: rgba(245, 166, 214, 0.45);
 }
 
 .hero-core {
@@ -270,15 +282,16 @@ img {
     background: linear-gradient(
         135deg,
         #8b5cf6,
-        var(--accent-purple)
+        #d8a4ff,
+        #f5a6d6
     );
 
-    box-shadow: 0 0 60px rgba(167, 139, 250, 0.2);
+    box-shadow: 0 0 60px rgba(177, 138, 255, 0.25);
     transform: rotate(-8deg);
 }
 
 .hero-core span {
-    color: #10111a;
+    color: #171020;
     font-size: 2.5rem;
     font-weight: 800;
     transform: rotate(8deg);
@@ -317,7 +330,7 @@ img {
 }
 
 .section-muted {
-    background: #10131c;
+    background: #100c19;
 }
 
 .section-heading {
@@ -359,13 +372,13 @@ img {
 
 .info-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(167, 139, 250, 0.5);
+    border-color: rgba(177, 138, 255, 0.6);
 }
 
 .card-number {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--accent-purple);
+    color: var(--accent-pink);
     font-size: 0.85rem;
     font-weight: 700;
 }
@@ -435,12 +448,12 @@ img {
 .filter-btn:hover,
 .filter-btn.active {
     background: var(--accent-purple);
-    color: #11111a;
+    color: #171020;
     border-color: var(--accent-purple);
 }
 
 .filter-btn:focus-visible {
-    outline: 2px solid var(--accent-purple);
+    outline: 2px solid var(--accent-pink);
     outline-offset: 3px;
 }
 
@@ -469,8 +482,8 @@ img {
 
 .project-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(167, 139, 250, 0.45);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    border-color: rgba(177, 138, 255, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 .project-content {
@@ -479,7 +492,7 @@ img {
 
 .project-category {
     margin-bottom: 10px;
-    color: var(--accent-purple);
+    color: var(--accent-pink);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -506,7 +519,7 @@ img {
 }
 
 .text-link:hover {
-    color: #c4b5fd;
+    color: var(--accent-pink);
 }
 
 .text-link:focus-visible {
@@ -517,76 +530,85 @@ img {
 
 /* =========================================================
    9. PROJECT SCREENSHOTS
-   All seven screenshots are displayed in four project cards.
+   The seven images stay inside their project cards.
+   Single images use the full width.
+   Paired images appear side by side.
    ========================================================= */
-
-/* Main screenshot container. */
 
 .project-image-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     align-items: start;
     gap: 12px;
+    width: 100%;
+    min-width: 0;
     padding: 14px;
 
-    background: #10131c;
+    background: #100c19;
     border-bottom: 1px solid var(--border-colour);
 }
 
-/* Keep each image inside its container without stretching. */
+/* Single screenshot. */
 
-.project-image {
+.project-image-wrapper:not(.project-image-pair) > .project-image {
     display: block;
     width: 100%;
-    height: 240px;
+    height: 250px;
+    max-width: 100%;
 
     object-fit: contain;
     object-position: center;
 
     border-radius: 10px;
-    background: #090b11;
+    background: #09070f;
 }
 
-/* Two screenshots displayed side by side. */
+/* Paired screenshots. */
 
 .project-image-wrapper.project-image-pair {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     align-items: start;
 }
 
-/* Figure containers prevent one image from pushing the other around. */
+/* Each paired screenshot has its own figure. */
 
 .project-figure {
+    display: block;
     min-width: 0;
+    width: 100%;
     margin: 0;
 }
 
+/* Prevent images from stretching or overflowing their columns. */
+
 .project-figure .project-image {
+    display: block;
+    width: 100%;
     height: 190px;
+    max-width: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 10px;
+    background: #09070f;
 }
 
-/* Captions identify each screenshot. */
+/* Screenshot labels. */
 
 .project-figure figcaption {
+    display: block;
     padding-top: 10px;
     color: var(--text-muted);
     font-size: 0.82rem;
     text-align: center;
 }
 
-/* Subtle hover feedback for project images. */
-
-.project-image {
-    transition:
-        border-radius 0.2s ease,
-        background 0.2s ease;
-}
-
 
 /* =========================================================
    10. ORIGINAL PROJECT VISUAL CLASSES
-   Retained in case other cards still use them.
    ========================================================= */
 
 .project-visual {
@@ -616,7 +638,7 @@ img {
 .visual-pink {
     background: radial-gradient(
         circle at 50% 45%,
-        #9d4f88,
+        #b45c9e,
         #3d213b 70%
     );
 }
@@ -683,7 +705,7 @@ img {
 }
 
 
-/* The game arena. */
+/* Game arena. */
 
 .game-arena {
     position: relative;
@@ -691,16 +713,16 @@ img {
     height: 380px;
     overflow: hidden;
 
-    border: 1px solid rgba(167, 139, 250, 0.3);
+    border: 1px solid rgba(177, 138, 255, 0.35);
     border-radius: 15px;
 
     background:
         radial-gradient(
             circle at 50% 50%,
-            rgba(100, 70, 160, 0.22),
+            rgba(100, 55, 150, 0.22),
             transparent 65%
         ),
-        #0a0d16;
+        #0a0711;
 
     outline: none;
     isolation: isolate;
@@ -713,7 +735,7 @@ img {
 }
 
 
-/* Decorative grid inside the arena. */
+/* Decorative arena grid. */
 
 .game-grid-pattern {
     position: absolute;
@@ -722,12 +744,12 @@ img {
 
     background-image:
         linear-gradient(
-            rgba(167, 139, 250, 0.07) 1px,
+            rgba(177, 138, 255, 0.07) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(167, 139, 250, 0.07) 1px,
+            rgba(177, 138, 255, 0.07) 1px,
             transparent 1px
         );
 
@@ -736,7 +758,7 @@ img {
 }
 
 
-/* Player basket. JavaScript controls its position. */
+/* Player basket. */
 
 .game-player {
     position: absolute;
@@ -806,7 +828,7 @@ img {
 }
 
 
-/* Start, win and game-over overlay. */
+/* Start screen, win screen and game-over screen. */
 
 .game-overlay {
     position: absolute;
@@ -818,7 +840,7 @@ img {
 
     padding: 22px;
 
-    background: rgba(7, 9, 16, 0.88);
+    background: rgba(7, 4, 13, 0.9);
     text-align: center;
 }
 
@@ -833,7 +855,7 @@ img {
 .game-overlay h3,
 #gameOverlayTitle {
     margin: 10px 0;
-    color: var(--accent-purple);
+    color: var(--accent-pink);
     font-size: clamp(1.5rem, 4vw, 2.1rem);
     font-weight: 800;
 }
@@ -910,7 +932,7 @@ kbd {
     color: var(--text-main);
     background: var(--surface-light);
 
-    border: 1px solid rgba(167, 139, 250, 0.4);
+    border: 1px solid rgba(177, 138, 255, 0.4);
     border-radius: 12px;
 
     font-size: 1.15rem;
@@ -935,7 +957,7 @@ kbd {
 }
 
 .game-control-btn:focus-visible {
-    outline: 2px solid var(--accent-purple);
+    outline: 2px solid var(--accent-pink);
     outline-offset: 3px;
 }
 
@@ -1016,17 +1038,17 @@ kbd {
     padding: 12px 14px;
 
     border: 1px solid var(--border-colour);
-    background: #0e1119;
+    background: #0e0a16;
     color: var(--text-main);
 }
 
 .contact-form .form-control::placeholder {
-    color: #7f8798;
+    color: #8c829f;
 }
 
 .contact-form .form-control:focus {
     border-color: var(--accent-purple);
-    box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.15);
+    box-shadow: 0 0 0 0.2rem rgba(177, 138, 255, 0.15);
 }
 
 .form-feedback {
@@ -1117,8 +1139,8 @@ kbd {
         gap: 8px;
     }
 
-    .project-image {
-        height: 210px;
+    .project-image-wrapper:not(.project-image-pair) > .project-image {
+        height: 220px;
     }
 
     .project-image-wrapper.project-image-pair {
@@ -1141,6 +1163,10 @@ kbd {
    ========================================================= */
 
 @media (max-width: 420px) {
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
 
     .game-arena {
         height: 300px;
@@ -1165,6 +1191,14 @@ kbd {
     .project-content {
         padding: 18px;
     }
+
+    .project-image-wrapper.project-image-pair {
+        gap: 6px;
+    }
+
+    .project-figure .project-image {
+        height: 125px;
+    }
 }
 
 
@@ -1184,51 +1218,5 @@ kbd {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
-    }
-}
-/* TEMPORARY FIX: Make portfolio screenshots visible */
-.project-image-wrapper {
-    display: block !important;
-    width: 100% !important;
-    min-height: 150px;
-    overflow: visible !important;
-}
-
-.project-image,
-.project-figure img {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 100px;
-    max-height: 350px;
-    object-fit: contain !important;
-    position: relative !important;
-    z-index: 2;
-}
-
-.project-image-pair {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px;
-}
-
-.project-figure {
-    display: block !important;
-    min-width: 0;
-    margin: 0;
-}
-
-.project-figure figcaption {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* Keep screenshots visible on smaller screens */
-@media (max-width: 600px) {
-    .project-image-pair {
-        grid-template-columns: 1fr !important;
     }
 }
