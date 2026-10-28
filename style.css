@@ -1186,3 +1186,22 @@ kbd {
         transition-duration: 0.01ms !important;
     }
 }
+/* =========================================================
+   COURSEWORK SCREENSHOTS
+   Displays portfolio images clearly without dark filters.
+   ========================================================= */
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background-color: #171526;
+
+    /* Keep screenshots fully visible and preserve their colours. */
+    opacity: 1;
+    visibility: visible;
+    filter: none;
+    mix-blend-mode: normal;
+}
